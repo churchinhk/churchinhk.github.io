@@ -1,0 +1,14 @@
+---
+layout: compress
+---
+{% if jekyll.environment != "development" %}<script>
+  var host = "{{ site.domain }}";
+  if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>{% endif %}
+<meta charset="UTF-8">
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+<title>{{ site.name }}{% if page.title %} - {{ page.title }} {% endif%}</title>
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+{{content}}
