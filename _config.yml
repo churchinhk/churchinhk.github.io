@@ -11,6 +11,7 @@ author: #For jekyll-feed
   uri: https://ickc.github.io/about/
 
 encoding: utf-8
+exclude: [.git, .gitignore, .sass-cache, package.json, gruntfile.js, node_modules, README.md, jekyllbuild, Gemfile, Gemfile.lock, index.md]
 defaults:
   -
     scope:
