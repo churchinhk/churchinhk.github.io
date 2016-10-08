@@ -3,7 +3,7 @@ SHELL := /bin/bash
 MD := $(wildcard *.p.md)
 MD2HTML := $(patsubst %.p.md,%.html,$(MD))
 
-pandocarc := -f markdown+autolink_bare_uris-fancy_lists -S --base-header-level=1 --toc --toc-depth=6 -N --normalize -s
+pandocarc := -f markdown+autolink_bare_uris-fancy_lists -S --toc --toc-depth=6 --normalize -s
 
 all: $(MD2HTML)
 
