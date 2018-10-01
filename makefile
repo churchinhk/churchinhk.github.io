@@ -11,5 +11,8 @@ all: $(MD2HTML)
 	echo -e "---\n---\n" > $@
 	pandoc $(pandocarc) $< >> $@
 
-clean:
+Clean:
 	rm -f $(MD2HTML)
+
+print-%:
+	$(info $* = $($*))
